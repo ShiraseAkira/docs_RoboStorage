@@ -1,0 +1,92 @@
+@startuml UseCase
+
+skinparam actorStyle awesome
+left to right direction
+
+:Студент: as S
+:Преподаватель: as P
+S <|- P
+
+package Авторизация {
+    (Регистрация) as Register
+    (Вход) as LogIn
+    (Выход) as LogOut
+}
+
+package Склады {
+    (Просмотр списка складов) as StorageList
+    (Добавление склада) as CreateStorege
+    (Удаление склада) as DeleteStorage
+    (Просмотр хранимого на складе) as StorageContent
+    (Отчет по складу) as StorageReport
+}
+
+package Элементы/Наборы {
+    (Просмотр списка) as ElementList
+    note top of ElementList : с разбивкой по категориям
+    (Фильтр списка по строке) as ElementListFilter
+    (Добавление элемента) as CreateElement
+    (Формирование набора из элементов) as FormPack
+    (Редактирование элемента/набора) as EditElement
+    (Удаление элемента/набора) as DeleteElement
+    (Просмотр элемента/набора) as CheckElement
+    (Отчет по элементу/набору) as ElementReport
+}
+
+note "Включает в себя информацию\nо месте хранения и состоянии" as N1
+
+N1 .. EditElement
+N1 .. CreateElement
+N1 .. FormPack
+
+package Выдача/возврат {
+    (Просмотр своих выдач) as DeliveryList
+    (Просмотр всех активных выдач) as AllDeliveryList
+    (Просмотр выдачи) as DeliveryCheck
+    (Добавление элемента/набора в список к выдаче) as AddToDeliveryList
+    (Выдача) as Delivery
+    (Возврат элементов на склад и удаление списка) as ReturnDeliveryToStorage
+    (Выдача на другого пользователя) as DeliveryTo
+    (Отчет по ответсвенному) as LiableReport
+    usecase PartialReturn as "Частичный возврат на склад
+    --
+    не уверен что фича нужна"
+}
+
+package Логи {
+    (Просмотр истории операций) as CheckLog
+}
+
+S --> Register
+S --> LogIn
+S --> LogOut
+' StorageList <-- S
+' StorageContent <-- S
+CheckElement <-- S
+ElementList <-- S
+ElementListFilter <-- S
+S --> DeliveryList
+S --> DeliveryCheck
+S --> AddToDeliveryList
+S --> Delivery
+S --> ReturnDeliveryToStorage
+
+' P --> Register
+' P --> LogIn
+' P --> LogOut
+StorageList <-- P
+StorageContent <-- P
+CreateStorege <-- P
+DeleteStorage <- P : пустого
+StorageReport <-- P
+CreateElement <-- P
+EditElement <-- P
+DeleteElement <-- P
+ElementReport <-- P
+P --> FormPack
+P --> AllDeliveryList
+P --> DeliveryTo
+P --> LiableReport
+P --> CheckLog
+
+@enduml
