@@ -4,46 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "211ac6fe5aa7e4df",
+        "id": "678c653995e42621",
         "type": "tabs",
         "children": [
           {
-            "id": "4289ff0317eabf3f",
+            "id": "47651b436d1290bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/UserStories.md",
+                "file": "1. Исходные сведения/Архитектурные факторы.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "bda868d5b8ba4d43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Требования.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "b77273bfe9a7e35a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c72715c817208236",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -112,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Требования.md",
+                "file": "1. Исходные сведения/Архитектурные факторы.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Требования.md",
+                "file": "1. Исходные сведения/Архитектурные факторы.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Требования.md"
+                "file": "1. Исходные сведения/Архитектурные факторы.md"
               }
             }
           }
@@ -173,10 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bda868d5b8ba4d43",
+  "active": "47651b436d1290bc",
   "lastOpenFiles": [
+    "Documents/Требования.md",
+    "1. Исходные сведения/Архитектурные факторы.md",
+    "Untitled",
+    "1. Исходные сведения",
+    "Documents/User Story Map.md",
     "Documents/UserStories.md",
-    "Требования.md",
     "Documents/other/TODO.md",
     "Diagrams/UseCase/UseCase.png",
     "Diagrams/UseCase/UseCase.puml",
@@ -190,7 +167,6 @@
     "test.png",
     "plantuml.jar",
     "plantuml-gplv2-1.2024.4.jar",
-    "test.puml.md",
-    "test.puml"
+    "test.puml.md"
   ]
 }
