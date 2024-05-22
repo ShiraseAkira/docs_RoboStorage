@@ -1,0 +1,26 @@
+@startuml Диаграмма контейнеров
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/devicons2/flutter.puml
+!include $ICONURL/devicons2/csharp.puml
+!include $ICONURL/material/folder.puml
+!include $ICONURL/devicons/mysql.puml
+
+Person(user, "Пользователь")
+
+System_Boundary(roboStorage, "RoboStorage") {
+    Container(client, "Приложение", "Dart / Flutter", $sprite="flutter")
+    Container(backend, "Бэк-энд", "C#, ASP.NET Core", $sprite="csharp")
+    Container(db, "БД", "MySQL", $sprite="mysql")
+    Container(fileStorage, "Хранилище файлов", $sprite="folder")
+}
+
+Rel(user, client, "Запускает")
+BiRel_R(client, backend, "API запросы", "JSON")
+BiRel_R(backend, db, "Чтение/запись", "SQL запрос")
+Rel_D(backend, fileStorage, "Сохранение файлов")
+Rel_D(db, fileStorage, "Хранит ссылки")
+
+@enduml

@@ -148,6 +148,14 @@
   },
   "active": "47651b436d1290bc",
   "lastOpenFiles": [
+    "Diagrams/C4/Container/Basic Sample.png",
+    "Diagrams/C4/Container/Диаграмма контейнеров.png",
+    "Diagrams/C4/Container/container.puml",
+    "Diagrams/C4/Container",
+    "Diagrams/C4",
+    "Diagrams/Energy Consumption Accounting System Web App. Диаграмма контейнеров (пользователи).png",
+    "Diagrams/test.puml",
+    "Diagrams/UseCase/test.puml",
     "Documents/Требования.md",
     "1. Исходные сведения/Архитектурные факторы.md",
     "Untitled",
@@ -159,14 +167,9 @@
     "Diagrams/UseCase/UseCase.puml",
     "Diagrams/UseCase",
     "Documents/other",
-    "Diagrams",
-    "Documents",
     "UseCase.png",
     "UseCase_v1.png",
-    "UseCase.puml",
     "test.png",
-    "plantuml.jar",
-    "plantuml-gplv2-1.2024.4.jar",
     "test.puml.md"
   ]
 }
