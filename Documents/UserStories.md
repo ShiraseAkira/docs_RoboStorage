@@ -1,0 +1,1 @@
+[Пользовательские истории](https://docs.google.com/document/d/1Mv_wiwfR3TbxRYJonNg24XKaJPZ5NGJoUZ4VGi-KPRc/edit?usp=sharing)

@@ -3,9 +3,7 @@
 skinparam actorStyle awesome
 left to right direction
 
-:Студент: as S
-:Преподаватель: as P
-S <|- P
+:Пользователь: as P
 
 package Авторизация {
     (Регистрация) as Register
@@ -40,53 +38,44 @@ N1 .. CreateElement
 N1 .. FormPack
 
 package Выдача/возврат {
-    (Просмотр своих выдач) as DeliveryList
-    (Просмотр всех активных выдач) as AllDeliveryList
-    (Просмотр выдачи) as DeliveryCheck
-    (Добавление элемента/набора в список к выдаче) as AddToDeliveryList
-    (Выдача) as Delivery
-    (Возврат элементов на склад и удаление списка) as ReturnDeliveryToStorage
-    (Выдача на другого пользователя) as DeliveryTo
+    (Просмотр списка проектов) as DeliveryList
+    (Просмотр проекта) as DeliveryCheck
+    (Создание проекта) as CreateDelivery
+    (Частичный возврат элементов из проекта)  as PartialReturn
+    (Удаление проекта и возврат всех элементов на склад) as ReturnDeliveryToStorage
     (Отчет по ответсвенному) as LiableReport
-    usecase PartialReturn as "Частичный возврат на склад
-    --
-    не уверен что фича нужна"
 }
 
 package Логи {
     (Просмотр истории операций) as CheckLog
 }
 
-S --> Register
-S --> LogIn
-S --> LogOut
-' StorageList <-- S
-' StorageContent <-- S
-CheckElement <-- S
-ElementList <-- S
-ElementListFilter <-- S
-S --> DeliveryList
-S --> DeliveryCheck
-S --> AddToDeliveryList
-S --> Delivery
-S --> ReturnDeliveryToStorage
+P --> Register
+P --> LogIn
+P --> LogOut
 
-' P --> Register
-' P --> LogIn
-' P --> LogOut
+P --> DeliveryList
+P --> DeliveryCheck
+P --> CreateDelivery
+P --> PartialReturn
+P --> ReturnDeliveryToStorage
+P --> LiableReport
+
 StorageList <-- P
 StorageContent <-- P
 CreateStorege <-- P
 DeleteStorage <- P : пустого
 StorageReport <-- P
+
+CheckElement <-- P
+ElementList <-- P
+ElementListFilter <-- P
 CreateElement <-- P
 EditElement <-- P
 DeleteElement <-- P
 ElementReport <-- P
-P --> FormPack
-P --> AllDeliveryList
-P --> DeliveryTo
-P --> LiableReport
+FormPack <-- P
+
 P --> CheckLog
 
 @enduml

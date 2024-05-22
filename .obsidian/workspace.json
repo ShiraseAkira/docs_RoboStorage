@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/other/TODO.md",
+                "file": "Documents/UserStories.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bda868d5b8ba4d43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Требования.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b77273bfe9a7e35a",
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/other/TODO.md",
+                "file": "Требования.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/other/TODO.md",
+                "file": "Требования.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/other/TODO.md"
+                "file": "Требования.md"
               }
             }
           }
@@ -160,15 +173,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87dea44439d8c76c",
+  "active": "bda868d5b8ba4d43",
   "lastOpenFiles": [
+    "Documents/UserStories.md",
+    "Требования.md",
+    "Documents/other/TODO.md",
     "Diagrams/UseCase/UseCase.png",
     "Diagrams/UseCase/UseCase.puml",
     "Diagrams/UseCase",
     "Documents/other",
     "Diagrams",
     "Documents",
-    "Documents/other/TODO.md",
     "UseCase.png",
     "UseCase_v1.png",
     "UseCase.puml",
