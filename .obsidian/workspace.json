@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Documents/other/TODO.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "Documents/other/TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "Documents/other/TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "Documents/other/TODO.md"
               }
             }
           }
@@ -162,7 +162,13 @@
   },
   "active": "87dea44439d8c76c",
   "lastOpenFiles": [
-    "TODO.md",
+    "Diagrams/UseCase/UseCase.png",
+    "Diagrams/UseCase/UseCase.puml",
+    "Diagrams/UseCase",
+    "Documents/other",
+    "Diagrams",
+    "Documents",
+    "Documents/other/TODO.md",
     "UseCase.png",
     "UseCase_v1.png",
     "UseCase.puml",
