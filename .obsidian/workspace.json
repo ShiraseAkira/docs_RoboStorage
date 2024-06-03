@@ -11,11 +11,9 @@
             "id": "47651b436d1290bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "1. Исходные сведения/Архитектурные факторы.md",
-                "mode": "source",
-                "source": false
+                "file": "Diagrams/C4/Container/Диаграмма контейнеров.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Исходные сведения/Архитектурные факторы.md",
+                "file": "Diagrams/C4/Container/Диаграмма контейнеров.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Исходные сведения/Архитектурные факторы.md",
+                "file": "Diagrams/C4/Container/Диаграмма контейнеров.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Исходные сведения/Архитектурные факторы.md"
+                "file": "Diagrams/C4/Container/Диаграмма контейнеров.png"
               }
             }
           }
@@ -148,29 +146,32 @@
   },
   "active": "47651b436d1290bc",
   "lastOpenFiles": [
-    "Diagrams/activity/Диаграмма активности.png",
-    "Diagrams/activity/activity.puml",
-    "Diagrams/activity/activity",
+    "out/component/API. Диаграмма компонентов.png",
+    "out/component",
+    "Diagrams/C4/Component/component.puml",
+    "Diagrams/C4/Component",
+    "out/activity_project/Диаграмма состояний.png",
+    "out/activity_project",
+    "out/activity_return/Диаграмма состояний.png",
+    "out/activity_return",
+    "Diagrams/activity/activity_return.puml",
+    "Diagrams/activity/activity_project.puml",
     "Diagrams/activity",
-    "Diagrams/C4/Container/activity",
-    "Diagrams/C4/Container/Basic Sample.png",
-    "Diagrams/C4/Container/Диаграмма контейнеров.png",
-    "Diagrams/C4/Container/container.puml",
-    "Diagrams/C4/Container",
-    "Diagrams/C4",
-    "Diagrams/Energy Consumption Accounting System Web App. Диаграмма контейнеров (пользователи).png",
-    "Diagrams/test.puml",
-    "Diagrams/UseCase/test.puml",
-    "Documents/Требования.md",
+    "Diagrams/server_activity/Диаграмма активности компонентов сервера.png",
     "1. Исходные сведения/Архитектурные факторы.md",
-    "Untitled",
-    "Documents/User Story Map.md",
     "Documents/UserStories.md",
-    "Documents/other/TODO.md",
+    "Documents/User Story Map.md",
+    "Documents/Требования.md",
+    "Diagrams/state/Диаграмма состояний.png",
+    "Diagrams/C4/Container/Диаграмма контейнеров.png",
+    "out/container/Диаграмма контейнеров.png",
+    "out/container",
+    "out/activity/Диаграмма состояний.png",
+    "out/UseCase/UseCase.png",
+    "out/UseCase",
+    "out/activity/Диаграмма активности компонентов сервера.png",
     "Diagrams/UseCase/UseCase.png",
-    "UseCase.png",
-    "UseCase_v1.png",
-    "test.png",
+    "Documents/other/TODO.md",
     "test.puml.md"
   ]
 }

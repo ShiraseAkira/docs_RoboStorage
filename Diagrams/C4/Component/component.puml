@@ -1,0 +1,46 @@
+@startuml API. Диаграмма компонентов
+title "C4. Компоненты"
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!$ICONURL = "https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v3.0.0/icons"
+!include $ICONURL/common.puml
+!include $ICONURL/devicons2/flutter.puml
+!include $ICONURL/devicons2/csharp.puml
+!include $ICONURL/devicons/mysql.puml
+
+Component(front, "Клиентское приложение", "Dart / Flutter", $sprite="flutter")
+
+System_Boundary(libAcc, "API") {
+
+  Component(BundleController, "BundleController", "C#, ASP.NET Core", "Управление наборами элементов", $sprite="csharp")
+  Component(BundleItemController, "BundleItemController", "C#, ASP.NET Core", "Управление элементами", $sprite="csharp")
+  Component(CategoryController, "CategoryController", "C#, ASP.NET Core", "Управление классификацией элементов", $sprite="csharp")
+  Component(ProjectController, "ProjectController", "C#, ASP.NET Core", "Управление проектами, связь элементов с проектом", $sprite="csharp")
+  Component(ResponsibleController, "ResponsibleController", "C#, ASP.NET Core", "Создание, назначение ответсвенных, формирование отчетов по элементам за которые отвечает", $sprite="csharp")
+  Component(StorageController, "StorageController", "C#, ASP.NET Core", "Управление складами(местами хранения)", $sprite="csharp")
+  Component(UserController, "UserController", "C#, ASP.NET Core", "Регистрация, авторизация", $sprite="csharp")
+  ComponentQueue(ORM, "EntityFramework", "C#, ASP.NET Core", "Взаимодействие с БД", $sprite="csharp")
+  
+}
+
+ComponentDb_Ext(DBMS, "MySQL", $sprite="mysql")
+
+Rel(front, BundleController, "")
+Rel(front, BundleItemController, "")
+Rel(front, CategoryController, "")
+Rel(front, ProjectController, "")
+Rel(front, ResponsibleController, "")
+Rel(front, StorageController, "")
+Rel(front, UserController, "")
+
+Rel(BundleController, ORM, "")
+Rel(BundleItemController, ORM, "")
+Rel(CategoryController, ORM, "")
+Rel(ProjectController, ORM, "")
+Rel(ResponsibleController, ORM, "")
+Rel(StorageController, ORM, "")
+Rel(UserController, ORM, "")
+
+Rel(ORM, DBMS, "")
+
+@enduml

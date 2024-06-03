@@ -1,0 +1,9 @@
+{
+    "plantuml.jar": "C:\\Users\\justs\\Documents\\RoboStorage\\plantuml.jar",
+    "plantuml.render": "Local",
+    "plantuml.exportIncludeFolderHeirarchy": false,
+    "plantuml.includepaths": [
+
+    ],
+    "plantuml.exportFormat": "png"
+}

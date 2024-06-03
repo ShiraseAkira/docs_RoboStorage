@@ -1,6 +1,0 @@
-@startuml Диаграмма активности
-start
-:Hello world;
-:2nd stage;
-stop
-@enduml
